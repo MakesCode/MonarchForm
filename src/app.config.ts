@@ -10,8 +10,13 @@ export default defineConfig({
       }),
       tailwindcss()
     ],
+    build: {
+      assetsDir: 'assets', // Assurez-vous que les assets sont placés dans un répertoire accessible
+      outDir: 'dist/_build', // Spécifiez le répertoire de sortie si nécessaire
+    },
   },
   server: {
     preset: 'netlify',
   },
+
 })
