@@ -28,7 +28,7 @@ export const FormReact = () => {
   };
 
   return (
-    <MonarchForm steps={steps} nameStorage="myForm" onSubmitApi={handleSubmit}>
+    <MonarchForm steps={steps} nameStorage="myForm2" onSubmitApi={handleSubmit}>
       {({ currentForm, prevStep, progress, isLastStep, currentStepIndex, id }) => (
         <div>
           <div>
