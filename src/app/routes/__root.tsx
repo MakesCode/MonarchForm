@@ -6,7 +6,7 @@ import {
   HeadContent,
   Scripts,
 } from '@tanstack/react-router'
-
+import themecss from '../assets/styles.css?url';
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -19,6 +19,12 @@ export const Route = createRootRoute({
       },
       {
         title: 'TanStack Start Starter',
+      },
+    ],
+    links: [
+      {
+        rel: 'stylesheet',
+        href: themecss,
       },
     ],
   }),
