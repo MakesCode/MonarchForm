@@ -1,7 +1,7 @@
 {
-  "name": "src",
+  "name": "monarchform",
   "version": "1.0.0",
-  "description": "",
+  "description": "MonarchForm is a flexible, reusable React component for building multi-step forms with dynamic step rendering and local storage persistence.",
   "main": "index.js",
   "type": "module",
   "scripts": {
