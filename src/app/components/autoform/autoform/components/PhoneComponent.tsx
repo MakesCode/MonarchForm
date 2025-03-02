@@ -42,7 +42,8 @@ export const PhoneComponent: React.FC<AutoFormFieldProps> = (props) => {
     } as React.ChangeEvent<HTMLInputElement>;
     props.inputProps.onChange(syntheticEvent);
   };
-
+  const { key, value, onChange, ref, error, onBlur,  ...propsinputProps } = props.inputProps;
+  
   return (
     <div className="flex gap-2">
       <Select value={countryCode} onValueChange={handleCountryChange}>
@@ -57,7 +58,7 @@ export const PhoneComponent: React.FC<AutoFormFieldProps> = (props) => {
           ))}
         </SelectContent>
       </Select>
-      <Input value={phoneOrigin} onChange={handlePhoneNumberChange} required data-testid="phone" />
+      <Input {...propsinputProps}  value={phoneOrigin} onChange={handlePhoneNumberChange} data-testid="phone" />
     </div>
   );
 };
