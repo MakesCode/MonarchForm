@@ -2,7 +2,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { AutoFormFieldProps } from '../react/types';
 import React from 'react';
 
-export const SelectField: React.FC<AutoFormFieldProps> = ({ field, inputProps, error, id }) => {
+export const SelectField: React.FC<AutoFormFieldProps> = ({ field, inputProps, error, id , value}) => {
   const { key, ...props } = inputProps;
 
   return (
@@ -17,7 +17,7 @@ export const SelectField: React.FC<AutoFormFieldProps> = ({ field, inputProps, e
         } as React.ChangeEvent<HTMLInputElement>;
         props.onChange(syntheticEvent);
       }}
-      defaultValue={field.default}
+      defaultValue={field.default || value}
     >
       <SelectTrigger id={id} className={error ? 'border-destructive' : ''}>
         <SelectValue placeholder="Select an option" />

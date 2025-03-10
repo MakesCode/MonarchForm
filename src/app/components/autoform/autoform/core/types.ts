@@ -19,7 +19,9 @@ export interface FieldConfig<
   order?: number;
   fieldWrapper?: FieldWrapper;
   customData?: CustomData;
+  shouldRender?: (data: Record<string, any>) => boolean;
 }
+
 
 export interface ParsedField<AdditionalRenderable = null, FieldTypes = string> {
   key: string;

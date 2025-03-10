@@ -78,7 +78,7 @@ export const phoneSchema = z.object({
   isValid: z.boolean().refine((value) => value === true, { message: 'Le numéro de téléphone est invalide' }),
 });
 
-const mySchema = z.object({
+export const mySchema = z.object({
   firstname: z.string().superRefine(
     fieldConfig({
       label: 'Prénom',
@@ -130,9 +130,21 @@ const mySchema = z.object({
       },
     }),
   ),
-});
+  interactive: z.string().optional().superRefine(
+    fieldConfig({
+      label: 'coucou',
+      shouldRender: (data : {
+        type: 'particulier' | 'professionnel';
+      }) => data.type === "particulier",
+      inputProps: {
+        required: false,
+      },
+    }),
+  ),
+})
 const schemaProvider = new ZodProvider(mySchema);
 export type Form1Data = z.infer<typeof mySchema>;
+
 export const Form1 = ({ data, onDataChange, id }: StepProps<Form1Data>) => {
   return (
     <AutoForm
