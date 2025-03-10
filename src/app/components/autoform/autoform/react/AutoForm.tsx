@@ -1,9 +1,10 @@
-import React, { FormEventHandler, JSX, useEffect } from 'react';
+import React, { JSX, useEffect } from 'react';
 import { useForm, FormProvider, DefaultValues } from 'react-hook-form';
-import { parseSchema, getDefaultValues, removeEmptyValues, ParsedField } from '@autoform/core';
 import { AutoFormProps } from './types';
 import { AutoFormProvider } from './context';
 import { AutoFormField } from './AutoFormField';
+import { getDefaultValues, parseSchema, removeEmptyValues } from '../core/logic';
+import { ParsedField } from '../core/types';
 
 export function AutoForm<T extends Record<string, any>>({
   schema,

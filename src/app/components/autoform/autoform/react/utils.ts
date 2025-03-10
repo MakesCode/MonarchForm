@@ -1,8 +1,8 @@
-import { FieldConfig } from '@autoform/core';
-import { SuperRefineFunction, fieldConfig as zodBaseFieldConfig } from '@autoform/zod';
-import { fieldConfig as yupBaseFieldConfig } from '@autoform/yup';
+import { SuperRefineFunction, fieldConfig as zodBaseFieldConfig } from '../zod/field-config';
+import { fieldConfig as yupBaseFieldConfig } from '../yup/field-config';
 import React, { ReactNode } from 'react';
 import { FieldWrapperProps } from './types';
+import { FieldConfig } from '../core/types';
 
 /**
  * @deprecated Use `buildZodFieldConfig` instead.

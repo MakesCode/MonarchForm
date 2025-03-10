@@ -1,11 +1,12 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 import { useAutoForm } from './context';
-import { getLabel, ParsedField } from '@autoform/core';
 import { ObjectField } from './ObjectField';
 import { ArrayField } from './ArrayField';
 import { AutoFormFieldProps } from './types';
 import { getPathInObject } from './utils';
+import { ParsedField } from '../core/types';
+import { getLabel } from '../core/label';
 
 export const AutoFormField: React.FC<{
   field: ParsedField;

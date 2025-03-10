@@ -64,11 +64,12 @@ export const Exemple2 = () => {
   );
 };
 
-import { ZodProvider, fieldConfig } from '@autoform/zod';
 import MonarchForm, { StepConfig, StepProps } from '../../MonarchForm';
 import { AutoForm } from './autoform/AutoForm';
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import { Button } from '../ui/button';
+import { fieldConfig } from './autoform/zod/field-config';
+import { ZodProvider } from './autoform/zod/provider';
 
 export const phoneSchema = z.object({
   phoneOrigin: z.string({}).min(1),

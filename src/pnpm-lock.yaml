@@ -8,15 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@autoform/core':
-        specifier: ^2.1.0
-        version: 2.1.0
-      '@autoform/yup':
-        specifier: ^2.1.0
-        version: 2.1.0(yup@1.6.1)
-      '@autoform/zod':
-        specifier: ^2.1.0
-        version: 2.1.0(zod@3.24.2)
       '@hookform/resolvers':
         specifier: ^4.1.2
         version: 4.1.2(react-hook-form@7.54.2(react@19.0.0))
@@ -104,6 +95,9 @@ importers:
       vinxi:
         specifier: ^0.5.3
         version: 0.5.3(@types/node@22.13.5)(db0@0.2.4)(ioredis@5.5.0)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(tsx@4.19.3)(typescript@5.7.3)
+      yup:
+        specifier: ^1.6.1
+        version: 1.6.1
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -150,19 +144,6 @@ packages:
 
   '@asamuzakjp/css-color@2.8.3':
     resolution: {integrity: sha512-GIc76d9UI1hCvOATjZPyHFmE5qhRccp3/zGfMPapK3jBi+yocEzp6BBB0UnfRYP9NP4FANqUZYb0hnfs3TM3hw==}
-
-  '@autoform/core@2.1.0':
-    resolution: {integrity: sha512-8eJIa4psajV3A5reJB3MFWfqSJkEQwU5NEuG+LzJNJlwy5c/T7Q/U1D+ofswGJOGWhDdAKUrLylkcnbL8pfkpg==}
-
-  '@autoform/yup@2.1.0':
-    resolution: {integrity: sha512-TD8iOaVvMn4mp/l524k570eExyIY3tY4MRXldhdgOTealsm2/HxWYX0p+f87urPcwuDPc4XkVEUx7f3iP7BzQA==}
-    peerDependencies:
-      yup: ^1.4.0
-
-  '@autoform/zod@2.1.0':
-    resolution: {integrity: sha512-HWd2AiorgvEzjsnP4e4bSnfhuVnRCXUiQwh9vJuYVpa5S/oxMdCaJihPdhMffmIaHOkapkMfxe9K3EfbLzSubg==}
-    peerDependencies:
-      zod: ^3
 
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
@@ -3937,18 +3918,6 @@ snapshots:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
       lru-cache: 10.4.3
-
-  '@autoform/core@2.1.0': {}
-
-  '@autoform/yup@2.1.0(yup@1.6.1)':
-    dependencies:
-      '@autoform/core': 2.1.0
-      yup: 1.6.1
-
-  '@autoform/zod@2.1.0(zod@3.24.2)':
-    dependencies:
-      '@autoform/core': 2.1.0
-      zod: 3.24.2
 
   '@babel/code-frame@7.26.2':
     dependencies:

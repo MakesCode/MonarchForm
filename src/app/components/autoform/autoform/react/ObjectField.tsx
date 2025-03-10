@@ -1,7 +1,8 @@
 import React from 'react';
 import { AutoFormField } from './AutoFormField';
 import { useAutoForm } from './context';
-import { getLabel, ParsedField } from '@autoform/core';
+import { ParsedField } from '../core/types';
+import { getLabel } from '../core/label';
 
 export const ObjectField: React.FC<{
   field: ParsedField;
